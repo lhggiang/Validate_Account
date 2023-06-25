@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let regex = /[a-z0-9_]{6,}/;
+        // if (!regex.test(value)) {
+        //     alert("Vui lòng nhập lại tài khoản")
+        // }
+        do {
+            let value = prompt("Nhập tên tài khoản")
+        } while (!regex.test(value));
+        alert("Tài khoản hợp lệ")
+    </script>
+</body>
+
+</html>
